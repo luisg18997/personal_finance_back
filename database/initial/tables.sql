@@ -96,7 +96,7 @@ CREATE TABLE per_finance_data.finance(
     id INTEGER DEFAULT nextval('per_finance_data.finance_id_seq'::regclass) NOT NULL,
     title VARCHAR(50) NOT NULL,
     description TEXT NOT NULL,
-    mount double precision NOT NULL
+    mount double precision NOT NULL,
     finance_date DATE NOT NULL,
     finance_hour TIME NOT NULL,
     category_id INTEGER NOT NULL,

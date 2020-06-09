@@ -4,7 +4,8 @@
   "description": "project of personal finance",
   "main": "src/index.js",
   "scripts": {
-    "start": "pm2 startOrReload ecosystem.config.js && pm2 log --lines 100 personal-finance-back",
+    "start": "node src/index.js",
+    "server": "pm2 startOrReload ecosystem.config.js && pm2 log --lines 100 personal-finance-back",
     "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

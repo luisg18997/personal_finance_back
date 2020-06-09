@@ -1,5 +1,4 @@
 const cloudinary = require('cloudinary').v2;
-const dataUri = require('./dataUri')
 const moment = require('moment');
 
 cloudinary.config({
@@ -10,7 +9,6 @@ cloudinary.config({
 
 const upload = async(file, folder) => {
     try {
-        // const Url = await dataUri(file)
         const result = await cloudinary.uploader.upload(file.tempFilePath, {
             folder: folder,
             resource_type: 'auto',
